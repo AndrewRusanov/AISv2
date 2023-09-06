@@ -1,18 +1,19 @@
 import React from 'react';
-import styles from './App.css';
+import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import EntryPage from './components/entry/EntryPage';
+import MainPage from './components/main/MainPage';
 
 function App() {
   return (
-    <section className={styles.page}>
+    <body className="page">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<EntryPage />} />
-          <Route path="rootPage" />
+          <Route path="mainPage" element={<MainPage />} />
         </Routes>
       </BrowserRouter>
-    </section>
+    </body>
   );
 }
 

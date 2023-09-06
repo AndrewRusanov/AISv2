@@ -1,0 +1,125 @@
+.sidebar {
+  width: 224px;
+  height: 100%;
+  background-color: #05205e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar_hidden {
+  width: 98px;
+  height: 100vh;
+  background-color: #05205e;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar__logo {
+  margin: 50px 119px 20px 32px;
+  width: 73px;
+  max-height: 30px;
+  object-fit: cover;
+}
+
+.sidebar__logo_hidden {
+  margin: 50px auto 20px;
+  width: auto;
+  height: 30px;
+  object-fit: cover;
+}
+
+.btn__hide {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+  background-color: #042779;
+  border: none;
+  position: absolute;
+  bottom: 40px;
+  right: 32px;
+}
+
+.btn__hide:hover {
+  background-color: #0246e7;
+  cursor: pointer;
+}
+
+.btn__hide_hidden {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+  background-color: #042779;
+  border: none;
+  position: absolute;
+  bottom: 40px;
+  right: 24px;
+}
+
+.btn__hide_hidden:hover {
+  background-color: #0246e7;
+  cursor: pointer;
+}
+
+.list__item {
+  width: 176px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  background-color: #05205e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.list__item:hover {
+  background-color: #042779;
+  cursor: pointer;
+}
+
+.list__item:last-of-type {
+  margin-bottom: 72px;
+}
+
+.list__item_hidden {
+  width: 36px;
+  height: 36px;
+  background-color: #05205e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.list__item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.list__item_hidden:hover {
+  background-color: #042779;
+  cursor: pointer;
+}
+
+.list__item_hidden:last-of-type {
+  margin-bottom: 72px;
+}
+
+.list__item_nav {
+  margin-bottom: 12px;
+}
