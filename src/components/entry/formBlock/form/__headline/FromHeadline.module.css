@@ -1,0 +1,23 @@
+/* >1660px */
+.form__headline {
+  font-size: 32px;
+  line-height: 1.17;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  width: 500px;
+}
+
+/* 1440..1659px */
+@media screen and (max-width: 1659px) {
+  .form__headline {
+    font-size: 28px;
+    width: 440px;
+  }
+}
+
+/* 1280..1439px */
+@media screen and (max-width: 1439px) {
+  .form__headline {
+    width: 200px;
+  }
+}

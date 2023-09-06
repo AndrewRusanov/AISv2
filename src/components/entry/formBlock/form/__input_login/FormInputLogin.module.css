@@ -1,0 +1,11 @@
+.input_login {
+  width: calc(100% - 34px);
+  height: 20px;
+  border-radius: 6px;
+  padding: 15px 16px;
+  border: 1px solid #e1e1e1;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+}

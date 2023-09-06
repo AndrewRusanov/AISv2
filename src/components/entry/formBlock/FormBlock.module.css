@@ -1,0 +1,9 @@
+.formBlcok {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
