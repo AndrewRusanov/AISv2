@@ -1,0 +1,35 @@
+.createBtn {
+  color: white;
+  width: 100%;
+  height: 50px;
+  background-color: #2969ff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.createBtn:hover {
+  cursor: pointer;
+  background-color: #0246e7;
+}
+
+.createBtn_hidden {
+  width: 100%;
+  height: 50px;
+  background-color: #2969ff;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.createBtn_hidden:hover {
+  cursor: pointer;
+  background-color: #0246e7;
+}

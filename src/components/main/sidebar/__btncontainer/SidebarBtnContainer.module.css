@@ -1,0 +1,9 @@
+.button__container {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.button__container_hidden {
+  width: 50px;
+  margin: 0 auto;
+}
