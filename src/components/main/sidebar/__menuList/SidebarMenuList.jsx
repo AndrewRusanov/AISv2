@@ -11,7 +11,7 @@ const SidebarMenuList = props => {
       return (
         <ul className={styles.menu}>
           <li className={styles.list__item_hidden}>
-            <NavLink to="/resumeList">
+            <NavLink to="/mainPage">
               <img
                 className={styles.menulist__itemImage_hidden}
                 src={imgStack}
@@ -20,12 +20,12 @@ const SidebarMenuList = props => {
             </NavLink>
           </li>
           <li className={styles.list__item_hidden}>
-            <NavLink to="/liked">
+            <NavLink to="liked">
               <img className={styles.menulist__itemImage_hidden} src={imgBookmark} alt="Закладка" />
             </NavLink>
           </li>
           <li className={styles.list__item_hidden}>
-            <NavLink to="/profile">
+            <NavLink to="profile">
               <img className={styles.menulist__itemImage_hidden} src={imgUser} alt="Пользователь" />
             </NavLink>
           </li>
@@ -35,19 +35,19 @@ const SidebarMenuList = props => {
       return (
         <ul className={styles.menu}>
           <li className={styles.list__item}>
-            <NavLink to="/resumeList">
+            <NavLink to="/mainPage">
               <img className={styles.menulist__itemImage} src={imgStack} alt="Список элементов" />
               <p className={styles.list__itemText}>Список резюме</p>
             </NavLink>
           </li>
           <li className={styles.list__item}>
-            <NavLink to="/liked">
+            <NavLink to="liked">
               <img className={styles.menulist__itemImage} src={imgBookmark} alt="Закладка" />
               <p className={styles.list__itemText}>Изборанное</p>
             </NavLink>
           </li>
           <li className={styles.list__item}>
-            <NavLink to="/profile">
+            <NavLink to="profile">
               <img className={styles.menulist__itemImage} src={imgUser} alt="Пользователь" />
               <p className={styles.list__itemText}>Профиль</p>
             </NavLink>

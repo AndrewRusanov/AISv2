@@ -16,7 +16,6 @@ const Sidebar = () => {
   const [logoLink, setLogoLink] = useState(logo); //Состояние для ссылки на лого в sidebar
   const [hideImage, setHideImage] = useState(arrowLeftLink); //Сосотояние для ссылки на иконку кнопки открытия/скрытия
   const [hideBtnClass, setHideBtnClass] = useState(styles.btn__hide); //Состояние для стиелй на кнопку открытия/скрытия меню
-  const [menuImgClass, setMenuImgClass] = useState(styles.list__item); //Состояние для стилей кнопок меню
 
   const hideSidebar = () => {
     setIsHide(!isHide);
@@ -27,7 +26,6 @@ const Sidebar = () => {
       setLogoLink(logo_hidden);
       setHideImage(arrowRightLink);
       setHideBtnClass(styles.btn__hide_hidden);
-      setMenuImgClass(styles.list__item_hidden);
     } else {
       // Если открытый (по умолчанию)
       setstyleLogo(styles.sidebar__logo);
@@ -35,7 +33,6 @@ const Sidebar = () => {
       setLogoLink(logo);
       setHideImage(arrowLeftLink);
       setHideBtnClass(styles.btn__hide);
-      setMenuImgClass(styles.list__item);
     }
   };
 
