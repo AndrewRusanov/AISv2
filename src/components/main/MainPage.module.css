@@ -1,6 +1,6 @@
 .page {
   display: grid;
-  grid-template-columns: minmax(98px, 224px) 1fr;
+  grid-template-columns: minmax(98px, auto) 1fr;
   grid-template-rows: repeat(1, 100%);
   background-color: white;
 }

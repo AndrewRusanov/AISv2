@@ -11,7 +11,7 @@ const SidebarMenuList = props => {
       return (
         <ul className={styles.menu}>
           <li className={styles.list__item_hidden}>
-            <NavLink to="/mainPage">
+            <NavLink to="/">
               <img
                 className={styles.menulist__itemImage_hidden}
                 src={imgStack}
@@ -35,7 +35,7 @@ const SidebarMenuList = props => {
       return (
         <ul className={styles.menu}>
           <li className={styles.list__item}>
-            <NavLink to="/mainPage">
+            <NavLink to="/">
               <img className={styles.menulist__itemImage} src={imgStack} alt="Список элементов" />
               <p className={styles.list__itemText}>Список резюме</p>
             </NavLink>
