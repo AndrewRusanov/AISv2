@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Content = () => {
+const ResumeList = () => {
   return <p>Список резюме</p>;
 };
 
-export default Content;
+export default ResumeList;

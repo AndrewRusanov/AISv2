@@ -3,9 +3,9 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import EntryPage from './components/entry/EntryPage';
 import MainPage from './components/main/MainPage';
-import Content from './components/main/content/Content';
-import Profile from './components/main/content/Profile';
-import Liked from './components/main/content/Liked';
+import Profile from './components/main/content/profile/Profile';
+import Liked from './components/main/content/liked/Liked';
+import ResumeList from './components/main/content/resumeList/ResumeList';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/entry" element={<EntryPage />} />
         <Route path="/" element={<MainPage />}>
-          <Route index path="/" element={<Content />} />
+          <Route index path="/" element={<ResumeList />} />
           <Route path="liked" element={<Liked />} />
           <Route path="profile" element={<Profile />} />
         </Route>
