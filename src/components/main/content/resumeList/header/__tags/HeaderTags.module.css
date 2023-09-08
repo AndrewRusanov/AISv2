@@ -1,0 +1,5 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 40px;
+}
