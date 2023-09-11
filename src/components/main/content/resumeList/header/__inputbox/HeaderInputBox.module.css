@@ -1,10 +1,27 @@
+/* >1660px */
 .inutbox_wrapper {
   display: flex;
   flex-direction: row;
   max-width: 1560px;
   min-width: 1240px;
   height: 50px;
-  margin: 0 auto 16px;
+  margin: 0 0 16px 0;
+}
+
+/* 1440..1659px */
+@media screen and (max-width: 1659px) {
+  .inutbox_wrapper {
+    max-width: 1440px;
+    min-width: calc(100% - 68px * 2 - 100px);
+  }
+}
+
+/* 1280..1439px */
+@media screen and (max-width: 1439px) {
+  .inutbox_wrapper {
+    max-width: 1200px;
+    min-width: calc(100% - 68px * 2 - 100px);
+  }
 }
 
 .filterbtn {
