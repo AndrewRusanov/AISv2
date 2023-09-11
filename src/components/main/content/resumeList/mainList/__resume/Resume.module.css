@@ -1,15 +1,18 @@
 /* >1660px */
-.resume__container {
+.resume__wrapper {
   background-color: white;
-  max-width: 1560px;
-  min-width: 1240px;
-  border-radius: 5px;
-  margin: 16px auto;
+  max-width: 1528px;
+  min-width: 1208px;
+  border-radius: 12px;
+  padding: 24px 16px 30px;
+  margin: 16px 68px;
+  display: grid;
+  grid-template-columns: minmax(325px, auto) 394px 319px 202px minmax(310px, auto);
 }
 
 /* 1440..1659px */
 @media screen and (max-width: 1659px) {
-  .resume__container {
+  .resume__wrapper {
     max-width: 1440px;
     min-width: calc(100% - 68px * 2 - 100px);
   }
@@ -17,8 +20,9 @@
 
 /* 1280..1439px */
 @media screen and (max-width: 1439px) {
-  .resume__container {
+  .resume__wrapper {
     max-width: 1200px;
     min-width: calc(100% - 68px * 2 - 100px);
+    grid-template-columns: minmax(247px, auto) 246px 199px 126px minmax(238px, auto);
   }
 }

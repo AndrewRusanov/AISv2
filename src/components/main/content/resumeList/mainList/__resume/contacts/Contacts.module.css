@@ -1,0 +1,22 @@
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+
+.contacts__subtitle {
+  color: #656263;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+}

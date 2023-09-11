@@ -39,10 +39,10 @@
   margin-right: 8px;
 }
 
-/* .filteritem:first-of-type .filteritem__text {
-  padding-left: calc(50% - 47px);
+.filteritem:first-of-type .filteritem__text {
+  padding-left: 68px;
 }
 
 .filteritem:last-of-type .filteritem__image {
-  padding-right: calc(50% - 60px);
-} */
+  padding-right: calc(68px);
+}

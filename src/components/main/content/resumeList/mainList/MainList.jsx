@@ -92,9 +92,8 @@ const MainLsit = () => {
     <section className={styles.resume__wrapper}>
       <Resume />
       <Resume />
-      {/* резюме 1 */}
-      {/* резюме 2 */}
-      {/* резюме 3 */}
+      <Resume />
+      <Resume />
     </section>
   );
 };
