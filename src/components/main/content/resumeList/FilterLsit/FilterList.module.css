@@ -1,5 +1,10 @@
 .filterlist {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(396px, auto) 394px 319px 202px minmax(381px, auto);
+}
+
+@media screen and (max-width: 1439px) {
+  .filterlist {
+    grid-template-columns: minmax(247px, auto) 246px 199px 126px minmax(238px, auto);
+  }
 }

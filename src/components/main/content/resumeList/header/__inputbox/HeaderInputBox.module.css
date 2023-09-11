@@ -19,7 +19,7 @@
 /* 1280..1439px */
 @media screen and (max-width: 1439px) {
   .inutbox_wrapper {
-    max-width: 1200px;
+    max-width: 1056px;
     min-width: calc(100% - 68px * 2 - 100px);
   }
 }
