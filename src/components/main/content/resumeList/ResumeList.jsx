@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ResumeList.module.css';
 import Header from './header/Header';
 import FilterList from './FilterLsit/FilterList';
+import MainLsit from './mainList/MainList';
 
 const ResumeList = () => {
   return (
@@ -9,7 +10,7 @@ const ResumeList = () => {
       {/* Тут будет все,что касается списка резюме */}
       <Header />
       <FilterList />
-      {/* Content */}
+      <MainLsit />
     </section>
   );
 };
