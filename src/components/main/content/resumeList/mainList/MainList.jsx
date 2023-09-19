@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MainLsit.module.css';
 import Resume from './__resume/Resume';
-
+import { v4 as uuid } from 'uuid';
 //тут будет массив элементов, который я получаю с сервера
 // const initValue = {
 //   totalPages: 0,
@@ -86,6 +86,75 @@ import Resume from './__resume/Resume';
 //   last: true,
 //   empty: true
 // };
+
+const initialList = [
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Александр Волхонский',
+      age: 29,
+      city: 'Москва'
+    },
+    experienceBlock: {
+      jobTitle: 'Java-разработчик',
+      experience: `ООО ТПК «Комфорт». Старший разработчик пользовательских интерфейсов
+      R-Vision, Август 2020 — по настоящее время`
+    },
+    contactBlock: {
+      tel: '+7 (999) 999-99-99',
+      mail: 'namemailname_mailname@mail.ru'
+    },
+    salary: 300000,
+    staus: 'Собеседование'
+  },
+  {
+    nameBlock: {
+      name: 'Константин Воскобойников'
+    },
+    experienceBlock: {
+      jobTitle: 'Инженер-программист 2 категории'
+    },
+    contactBlock: {
+      mail: 'namemailname_mailname@mail.ru'
+    },
+    salary: undefined,
+    staus: 'Не в работе'
+  },
+  {
+    nameBlock: {
+      name: 'Анастасия Христорождественская',
+      age: 25,
+      city: 'Новосибирск'
+    },
+    experienceBlock: {
+      jobTitle: 'Ведущий программист 1С',
+      experience: `ТОО «1С: Франчайзинг Караганда»`
+    },
+    contactBlock: {
+      tel: '+7 (000) 000-00-00',
+      mail: 'namemailname_mailname@mail.ru'
+    },
+    salary: 150000,
+    staus: 'Отправка оффера'
+  },
+  {
+    nameBlock: {
+      name: 'Анастасия Христорождественская',
+      age: 25,
+      city: 'Новосибирск'
+    },
+    experienceBlock: {
+      jobTitle: 'Ведущий программист 1С',
+      experience: `ТОО «1С: Франчайзинг Караганда»`
+    },
+    contactBlock: {
+      tel: '+7 (000) 000-00-00',
+      mail: 'namemailname_mailname@mail.ru'
+    },
+    salary: 150000,
+    staus: 'Отправка оффера'
+  }
+];
 
 const MainLsit = () => {
   return (
