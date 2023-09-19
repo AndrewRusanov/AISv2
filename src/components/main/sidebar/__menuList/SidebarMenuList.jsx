@@ -43,7 +43,7 @@ const SidebarMenuList = props => {
           <li className={styles.list__item}>
             <NavLink to="liked">
               <img className={styles.menulist__itemImage} src={imgBookmark} alt="Закладка" />
-              <p className={styles.list__itemText}>Изборанное</p>
+              <p className={styles.list__itemText}>Избранное</p>
             </NavLink>
           </li>
           <li className={styles.list__item}>

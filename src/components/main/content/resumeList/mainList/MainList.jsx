@@ -2,90 +2,6 @@ import React from 'react';
 import styles from './MainLsit.module.css';
 import Resume from './__resume/Resume';
 import { v4 as uuid } from 'uuid';
-//тут будет массив элементов, который я получаю с сервера
-// const initValue = {
-//   totalPages: 0,
-//   totalElements: 0,
-//   size: 0,
-//   content: [
-//     {
-//       state: 'new',
-//       id: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-//       status: 'new',
-//       surname: 'string',
-//       name: 'string',
-//       contacts: [
-//         {
-//           id: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-//           type: 'string',
-//           value: 'string'
-//         }
-//       ],
-//       position: 'string',
-//       age: 0,
-//       city: 'string',
-//       experience: {
-//         id: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-//         position: 'string',
-//         companyName: 'string',
-//         startDate: '2023-09-11',
-//         endDate: '2023-09-11',
-//         site: 'string',
-//         activity: {
-//           activityName: 'string',
-//           details: ['string']
-//         },
-//         description: 'string'
-//       },
-//       generalExperience: 0,
-//       salary: 0,
-//       currency: 'string',
-//       actions: {
-//         applicant: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-//         canImport: true,
-//         canCreate: true,
-//         canView: true,
-//         canEdit: true,
-//         canAddToList: true,
-//         canDeleteFromList: true,
-//         canDelete: true,
-//         canContact: true,
-//         canInterview: true,
-//         canOffer: true,
-//         canReject: true,
-//         canCheckSecurity: true,
-//         canRefuse: true,
-//         canFinishWork: true,
-//         canResetStatus: true,
-//         canInitialStatus: true,
-//         canSave: true
-//       },
-//       favouriteListIds: ['3fa85f64-5717-4562-b3fc-2c963f66afa6']
-//     }
-//   ],
-//   number: 0,
-//   sort: {
-//     empty: true,
-//     unsorted: true,
-//     sorted: true
-//   },
-//   pageable: {
-//     offset: 0,
-//     sort: {
-//       empty: true,
-//       unsorted: true,
-//       sorted: true
-//     },
-//     pageNumber: 0,
-//     pageSize: 0,
-//     unpaged: true,
-//     paged: true
-//   },
-//   numberOfElements: 0,
-//   first: true,
-//   last: true,
-//   empty: true
-// };
 
 const initialList = [
   {
@@ -108,19 +24,7 @@ const initialList = [
     staus: 'Собеседование'
   },
   {
-    nameBlock: {
-      name: 'Константин Воскобойников'
-    },
-    experienceBlock: {
-      jobTitle: 'Инженер-программист 2 категории'
-    },
-    contactBlock: {
-      mail: 'namemailname_mailname@mail.ru'
-    },
-    salary: undefined,
-    staus: 'Не в работе'
-  },
-  {
+    id: uuid(),
     nameBlock: {
       name: 'Анастасия Христорождественская',
       age: 25,
@@ -138,33 +42,105 @@ const initialList = [
     staus: 'Отправка оффера'
   },
   {
+    id: uuid(),
     nameBlock: {
-      name: 'Анастасия Христорождественская',
-      age: 25,
-      city: 'Новосибирск'
+      name: 'Владимир Дубровкский',
+      age: 23,
+      city: 'Екатеринбург'
     },
     experienceBlock: {
-      jobTitle: 'Ведущий программист 1С',
-      experience: `ТОО «1С: Франчайзинг Караганда»`
+      jobTitle: 'Инженер-программист 2 категории',
+      experience: `ООО «Тета Дата Солюшнс» («ZYFRA»)`
     },
     contactBlock: {
-      tel: '+7 (000) 000-00-00',
-      mail: 'namemailname_mailname@mail.ru'
+      tel: '+7 (987) 654-32-10'
     },
-    salary: 150000,
-    staus: 'Отправка оффера'
+    salary: 0,
+    staus: 'Связь с кандидатом'
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Родион Раскольников',
+      age: 21,
+      city: 'Санкт-Петербург'
+    },
+    experienceBlock: {
+      jobTitle: 'Java developer',
+      experience: `ООО ТПК «Комфорт». Старший разработчик пользовательских интерфейсов
+      R-Vision, Август 2020 — по настоящее время`
+    },
+    contactBlock: {
+      tel: '+7 (012) 345-67-89',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 90000,
+    staus: 'Собеседование'
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Екатерина Самойлова',
+      age: 24,
+      city: 'Хабаровск'
+    },
+    experienceBlock: {
+      jobTitle: 'Бизнес-аналитик',
+      experience: `ООО ТПК «Комфорт». Старший разработчик пользовательских интерфейсов
+      R-Vision, Август 2020 — по настоящее время`
+    },
+    contactBlock: {
+      tel: '+7 (999) 999-99-99',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 300000,
+    staus: 'Проверка СБ'
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Константин Воскобойников',
+      age: 19,
+      city: 'Москва'
+    },
+    experienceBlock: {
+      jobTitle: 'Frontend-разработчик (Junior frontend developer)',
+      experience: `Разработка и поддержка CRM системы для малого бизнеса  - amoCRM. Данный продукт распространяется по модели SaaS, когда клиенту не надо ничего устанавливать на компьютер, он работает в браузере в режиме Online.`
+    },
+    contactBlock: {
+      tel: '+7 (999) 999-99-99',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 400000,
+    staus: 'Собеседование'
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Константин Воскобойников',
+      age: 19,
+      city: 'Москва'
+    },
+    experienceBlock: {
+      jobTitle: 'Frontend-разработчик (Junior frontend developer)',
+      experience: `Разработка и поддержка CRM системы для малого бизнеса  - amoCRM. Данный продукт распространяется по модели SaaS, когда клиенту не надо ничего устанавливать на компьютер, он работает в браузере в режиме Online.`
+    },
+    contactBlock: {
+      tel: '+7 (999) 999-99-99',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 400000,
+    staus: 'Собеседование'
   }
 ];
 
 const MainLsit = () => {
   return (
     <section className={styles.resume__wrapper}>
-      <Resume />
-      <Resume />
-      <Resume />
-      <Resume />
+      {initialList.map(item => {
+        return <Resume info={item} />;
+      })}
     </section>
   );
 };
-
 export default MainLsit;
