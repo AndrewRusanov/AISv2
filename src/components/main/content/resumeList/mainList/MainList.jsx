@@ -21,7 +21,25 @@ const initialList = [
       mail: 'namemailname_mailname@mail.ru'
     },
     salary: 300000,
-    staus: 'Собеседование'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -39,7 +57,25 @@ const initialList = [
       mail: 'namemailname_mailname@mail.ru'
     },
     salary: 150000,
-    staus: 'Отправка оффера'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -56,7 +92,25 @@ const initialList = [
       tel: '+7 (987) 654-32-10'
     },
     salary: 0,
-    staus: 'Связь с кандидатом'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -75,7 +129,25 @@ const initialList = [
       mail: 'mailname@mail.ru'
     },
     salary: 90000,
-    staus: 'Собеседование'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -94,7 +166,25 @@ const initialList = [
       mail: 'mailname@mail.ru'
     },
     salary: 300000,
-    staus: 'Проверка СБ'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -112,7 +202,134 @@ const initialList = [
       mail: 'mailname@mail.ru'
     },
     salary: 400000,
-    staus: 'Собеседование'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Владимир Дубровкский',
+      age: 23,
+      city: 'Екатеринбург'
+    },
+    experienceBlock: {
+      jobTitle: 'Инженер-программист 2 категории',
+      experience: `ООО «Тета Дата Солюшнс» («ZYFRA»)`
+    },
+    contactBlock: {
+      tel: '+7 (987) 654-32-10'
+    },
+    salary: 0,
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Родион Раскольников',
+      age: 21,
+      city: 'Санкт-Петербург'
+    },
+    experienceBlock: {
+      jobTitle: 'Java developer',
+      experience: `ООО ТПК «Комфорт». Старший разработчик пользовательских интерфейсов
+      R-Vision, Август 2020 — по настоящее время`
+    },
+    contactBlock: {
+      tel: '+7 (012) 345-67-89',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 90000,
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
+  },
+  {
+    id: uuid(),
+    nameBlock: {
+      name: 'Екатерина Самойлова',
+      age: 24,
+      city: 'Хабаровск'
+    },
+    experienceBlock: {
+      jobTitle: 'Бизнес-аналитик',
+      experience: `ООО ТПК «Комфорт». Старший разработчик пользовательских интерфейсов
+      R-Vision, Август 2020 — по настоящее время`
+    },
+    contactBlock: {
+      tel: '+7 (999) 999-99-99',
+      mail: 'mailname@mail.ru'
+    },
+    salary: 300000,
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   },
   {
     id: uuid(),
@@ -130,7 +347,25 @@ const initialList = [
       mail: 'mailname@mail.ru'
     },
     salary: 400000,
-    staus: 'Собеседование'
+    status: {
+      applicant: 'тут айди',
+      canImport: false,
+      canCreate: false,
+      canView: false,
+      canEdit: false,
+      canAddToList: false,
+      canDeleteFromList: false,
+      canContact: false,
+      canInterview: false,
+      canOffer: false,
+      canReject: false,
+      canCheckSecurity: false,
+      canRefuse: false,
+      canFinishWork: false,
+      canResetStatus: false,
+      canInitialStatus: false,
+      canSave: false
+    }
   }
 ];
 
