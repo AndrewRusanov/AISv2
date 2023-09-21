@@ -1,3 +1,9 @@
+.statusbar__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .status__container {
   display: flex;
   flex-direction: row;
@@ -19,4 +25,13 @@
   line-height: 1.4;
   margin: 0;
   padding: 0;
+}
+
+.status__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.status__icon:hover path {
+  stroke: #0246e7;
 }

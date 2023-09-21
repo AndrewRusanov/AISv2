@@ -4,7 +4,7 @@ import NameContainer from './nameContainer/NameContainer';
 import Experience from './experience/Experience';
 import Contacts from './contacts/Contacts';
 import Salary from './salary/Salary';
-import Status from './status/Status';
+import Statusbar from './statusbar/Statusbar';
 
 // TODO. Сделать массив-балванку, чтобы через map передавать туда нужные элементы
 
@@ -22,7 +22,7 @@ const Resume = props => {
       />
       <Contacts tel={props.info.contactBlock.tel} mail={props.info.contactBlock.mail} />
       <Salary value={props.info.salary} />
-      <Status />
+      <Statusbar />
     </div>
   );
 };

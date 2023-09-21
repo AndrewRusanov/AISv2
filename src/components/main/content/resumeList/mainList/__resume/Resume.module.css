@@ -5,7 +5,7 @@
   padding: 24px 16px 30px;
   margin: 16px 68px;
   display: grid;
-  grid-template-columns: minmax(325px, auto) 394px 319px 202px minmax(310px, auto);
+  grid-template-columns: minmax(325px, auto) 394px 319px 202px minmax(286px, auto);
 }
 
 /* 1440..1659px */
