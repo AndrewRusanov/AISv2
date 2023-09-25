@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './MainLsit.module.css';
 import Resume from './__resume/Resume';
 import initialList from './InitialList';
+import Navigate from './__navigate/Navigate';
 
 const getContent = list => {
   if (!(list.length === 0)) {
@@ -10,13 +11,15 @@ const getContent = list => {
         {list.map(item => {
           return <Resume info={item} />;
         })}
-        <div>крутилка</div>
+        <Navigate />
       </section>
     );
   } else {
-    <section className={styles.resume__wrapper}>
-      <div>Список резюме пуст</div>
-    </section>;
+    return (
+      <section className={styles.resume__wrapper}>
+        <div>Список резюме пуст</div>
+      </section>
+    );
   }
 };
 

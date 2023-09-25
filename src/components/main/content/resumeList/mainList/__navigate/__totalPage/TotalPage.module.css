@@ -1,0 +1,25 @@
+.totalPage__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.totalPage__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #989898;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.totalPage__input {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 0;
+  text-align: center;
+  max-width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: #e1e1e1;
+  outline: #989898;
+}

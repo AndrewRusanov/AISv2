@@ -1,0 +1,8 @@
+.navigate__wrapper {
+  width: calc(100% - 68px * 2);
+  max-height: 50px;
+  margin: 24px auto 120px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
