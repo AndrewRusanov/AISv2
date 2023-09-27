@@ -8,20 +8,27 @@ import Statusbar from './statusbar/Statusbar';
 
 // TODO. Сделать массив-балванку, чтобы через map передавать туда нужные элементы
 
+// Функция для сохранения контактной информации о
+const getContactObject = array => {
+  let contactObject = {};
+  array.map(item => {
+    return (contactObject[item.type] = item.value);
+  });
+  return contactObject;
+};
+
 const Resume = props => {
   return (
     <div className={styles.resume__wrapper}>
       <NameContainer
-        name={props.info.nameBlock.name}
-        age={props.info.nameBlock.age}
-        city={props.info.nameBlock.city}
+        name={props.info.name}
+        surname={props.info.surname}
+        age={props.info.age}
+        city={props.info.city}
       />
-      <Experience
-        jobTitle={props.info.experienceBlock.jobTitle}
-        experience={props.info.experienceBlock.experience}
-      />
-      <Contacts tel={props.info.contactBlock.tel} mail={props.info.contactBlock.mail} />
-      <Salary value={props.info.salary} />
+      <Experience position={props.info.position} experience={props.info.experience.description} />
+      <Contacts contacts={getContactObject(props.info.contacts)} />
+      <Salary value={props.info.salary} currency={props.info.currency} />
       <Statusbar />
     </div>
   );

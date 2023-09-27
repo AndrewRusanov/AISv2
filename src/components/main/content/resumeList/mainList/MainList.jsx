@@ -1,29 +1,26 @@
 import React from 'react';
 import styles from './MainLsit.module.css';
 import Resume from './__resume/Resume';
-import initialList from './InitialList';
+import initialList from './InitialList.js';
+import initialObject from './InitialObject.js';
 import Navigate from './__navigate/Navigate';
 
-const getContent = list => {
-  if (!(list.length === 0)) {
+const getObject = initObject => {
+  if (initObject) {
     return (
       <section className={styles.resume__wrapper}>
-        {list.map(item => {
+        {initObject.content.map(item => {
           return <Resume info={item} />;
         })}
         <Navigate />
       </section>
     );
   } else {
-    return (
-      <section className={styles.resume__wrapper}>
-        <div>Список резюме пуст</div>
-      </section>
-    );
+    return <section className={styles.resume__wrapper}>Список резюме пуст</section>;
   }
 };
 
 const MainLsit = () => {
-  return <>{getContent(initialList)}</>;
+  return <>{getObject(initialObject)}</>;
 };
 export default MainLsit;
