@@ -26,7 +26,7 @@ const Resume = props => {
         age={props.info.age}
         city={props.info.city}
       />
-      <Experience position={props.info.position} experience={props.info.experience.description} />
+      <Experience position={props.info.position} exp={props.info.experience} />
       <Contacts contacts={getContactObject(props.info.contacts)} />
       <Salary value={props.info.salary} currency={props.info.currency} />
       <Statusbar />

@@ -37,7 +37,7 @@ const initialObject = {
           R-Vision, Август 2020 — по настоящее время`
       },
       generalExperience: 0,
-      salary: 300000,
+      salary: 30000,
       currency: 'рубли',
       actions: {
         canImport: true,
@@ -332,8 +332,8 @@ const initialObject = {
       city: 'Москва',
       experience: {
         companyName: undefined,
-        startDate: 2010 - 12 - 23,
-        endDate: 2022 - 12 - 23,
+        startDate: '2010-12-23',
+        endDate: '2022-12-23',
         site: 'Местоположение',
         activity: {
           activityName: 'string',
@@ -492,7 +492,7 @@ const initialObject = {
       },
       generalExperience: 0,
       salary: 150000,
-      currency: 'рубли',
+      currency: 'доллары',
       actions: {
         canImport: true,
         canCreate: true,
@@ -642,8 +642,8 @@ const initialObject = {
       city: 'Москва',
       experience: {
         companyName: undefined,
-        startDate: 2010 - 12 - 23,
-        endDate: 2022 - 12 - 23,
+        startDate: '2010-12-23',
+        endDate: '2022-12-23',
         site: 'Местоположение',
         activity: {
           activityName: 'string',
@@ -852,8 +852,8 @@ const initialObject = {
       city: 'Москва',
       experience: {
         companyName: undefined,
-        startDate: 2010 - 12 - 23,
-        endDate: 2022 - 1 - 23,
+        startDate: '2010-12-23',
+        endDate: '2022-01-23',
         site: 'Местоположение',
         activity: {
           activityName: 'string',
@@ -863,7 +863,7 @@ const initialObject = {
       },
       generalExperience: 0,
       salary: 400000,
-      currency: 'рубли',
+      currency: 'евро',
       actions: {
         canImport: true,
         canCreate: true,

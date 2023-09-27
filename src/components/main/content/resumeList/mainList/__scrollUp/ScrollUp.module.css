@@ -1,0 +1,17 @@
+.scrollUp__button {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 16px;
+  right: 27px;
+  z-index: 99;
+  background: none;
+  outline: 0;
+  border: 0;
+  opacity: 1;
+}
+
+.scrollUp__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
