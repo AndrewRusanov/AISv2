@@ -5,10 +5,13 @@ import { NavLink } from 'react-router-dom';
 const EmptyList = () => {
   return (
     <div className={styles.emptyList__container}>
-      <h2>Список резюме пуст</h2>
-      <p>
+      <h2 className={styles.emptyList__title}>Список резюме пуст</h2>
+      <p className={styles.emptyList__subtitle}>
         Для отклика на вакансии и получения приглашений на интервью необходимо{' '}
-        <NavLink to="/">создать резюме</NavLink>.
+        <NavLink to="/" className={styles.emptyList__link}>
+          создать резюме
+        </NavLink>
+        .
       </p>
     </div>
   );

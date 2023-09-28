@@ -7,7 +7,7 @@ import ScrollUp from './__scrollUp/ScrollUp';
 import EmptyList from './__empty/EmptyList';
 
 const getObject = initObject => {
-  if (!initObject.length === 0) {
+  if (Object.keys(initObject).length !== 0) {
     return (
       <section className={styles.resume__wrapper}>
         {initObject.content.map(item => {

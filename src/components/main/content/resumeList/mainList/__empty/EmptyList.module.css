@@ -3,3 +3,31 @@
   padding: 0;
   color: black;
 }
+
+.emptyList__title {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 0 auto 10px;
+  padding: 0;
+  max-width: 583px;
+  text-align: center;
+}
+
+.emptyList__subtitle {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 484px;
+  text-align: center;
+}
+
+.emptyList__link {
+  color: #2969ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4;
+}

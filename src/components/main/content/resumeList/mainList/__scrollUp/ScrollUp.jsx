@@ -11,7 +11,7 @@ const ScrollUp = () => {
         document.documentElement.scrollTop = 0;
       }}
     >
-      <img src={image} />
+      <img src={image} alt="Вернуться вверх" />
     </button>
   );
 };
