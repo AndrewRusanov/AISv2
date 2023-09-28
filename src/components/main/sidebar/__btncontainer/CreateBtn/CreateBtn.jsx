@@ -7,7 +7,7 @@ const CreateBtn = props => {
   const result = truth => {
     if (truth) {
       return (
-        <NavLink to="/entry">
+        <NavLink to="/">
           <button className={styles.createBtn_hidden}>
             <img src={userPlus} alt="Добавить резюме" />
           </button>
@@ -15,7 +15,7 @@ const CreateBtn = props => {
       );
     } else {
       return (
-        <NavLink to="/entry">
+        <NavLink to="/">
           <button className={styles.createBtn}>Создать резюме</button>
         </NavLink>
       );

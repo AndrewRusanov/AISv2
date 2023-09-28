@@ -4,7 +4,7 @@ import styles from './FormLoginButton.module.css';
 
 const FormLoginButton = () => {
   return (
-    <NavLink to="/">
+    <NavLink to="/main">
       <button className={styles.login_button}>Войти</button>
     </NavLink>
   );

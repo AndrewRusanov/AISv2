@@ -11,9 +11,9 @@ function App() {
   return (
     <body className="page">
       <Routes>
-        <Route path="/entry" element={<EntryPage />} />
-        <Route path="/" element={<MainPage />}>
-          <Route index path="/" element={<ResumeList />} />
+        <Route path="/" element={<EntryPage />} />
+        <Route path="/main" element={<MainPage />}>
+          <Route index path="/main" element={<ResumeList />} />
           <Route path="liked" element={<Liked />} />
           <Route path="profile" element={<Profile />} />
         </Route>

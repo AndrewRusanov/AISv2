@@ -6,7 +6,6 @@ import FormBlock from './formBlock/FormBlock';
 const EntryPage = () => {
   return (
     <div className={styles.page}>
-      {/* Блок с формой */}
       <FormBlock />
       <ImageBlock />
     </div>
