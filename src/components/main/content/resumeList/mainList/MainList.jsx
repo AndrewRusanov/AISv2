@@ -4,9 +4,10 @@ import Resume from './__resume/Resume';
 import initialObject from './InitialObject.js';
 import Navigate from './__navigate/Navigate';
 import ScrollUp from './__scrollUp/ScrollUp';
+import EmptyList from './__empty/EmptyList';
 
 const getObject = initObject => {
-  if (initObject) {
+  if (!initObject.length === 0) {
     return (
       <section className={styles.resume__wrapper}>
         {initObject.content.map(item => {
@@ -17,7 +18,11 @@ const getObject = initObject => {
       </section>
     );
   } else {
-    return <section className={styles.resume__wrapper}>Список резюме пуст</section>;
+    return (
+      <section className={styles.resume__wrapper}>
+        <EmptyList />
+      </section>
+    );
   }
 };
 

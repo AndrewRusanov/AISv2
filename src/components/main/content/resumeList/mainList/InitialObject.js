@@ -1,6 +1,8 @@
 import { v4 as uuid } from 'uuid';
 
-const initialObject = {
+const initialObject = {};
+
+const Save = {
   totalPages: 2,
   totalElements: 20,
   size: 0,
